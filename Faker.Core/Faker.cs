@@ -1,12 +1,18 @@
-﻿using Generators;
+﻿using System.Reflection.Emit;
+
 namespace Faker.Core;
+using Generators;
+using System.Reflection;
+using System.Linq;
 public class Faker
 {
     private List<IValueGenerator> _generators;
     
     public Faker()
     {
-        _generators = new List<IValueGenerator>() {new IntGenerator(), new DoubleGenerator()};
+        _generators = Assembly.Load("Generators").GetTypes()
+            .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
+            .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
     }
     public T Create<T>()
     {
@@ -26,10 +32,8 @@ public class Faker
     private static object GetDefaultValue(Type t)
     {
         if (t.IsValueType)
-            // Для типов-значений вызов конструктора по умолчанию даст default(T).
             return Activator.CreateInstance(t);
         else
-            // Для ссылочных типов значение по умолчанию всегда null.
             return null;
     }
 }

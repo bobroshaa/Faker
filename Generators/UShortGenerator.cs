@@ -1,15 +1,15 @@
 ﻿namespace Generators;
 
-public class DoubleGenerator : IValueGenerator
+public class UShortGenerator : IValueGenerator
 {
     public object Generate(Type typeToGenerate)
     {
         Random rnd = new Random();
-        return (rnd.NextDouble() - 0.5) * double.MaxValue;
+        return (ushort)rnd.Next(0, 65535);
     }
 
     public bool CanGenerate(Type type)
     {
-        return type == Type.GetType("System.Double");
+        return type == Type.GetType("System.UInt16");
     }
 }

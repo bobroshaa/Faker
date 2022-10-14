@@ -5,8 +5,12 @@ class Program
     static void Main(string[] args)
     {
         var faker = new Faker();
-        int i = faker.Create<int>(); // 542
-        double d = faker.Create<double>(); // 12.458
-        Console.WriteLine(i + "!!!" + d);
+        Console.WriteLine("int" + faker.Create<int>());
+        Console.WriteLine("ushort" + faker.Create<ushort>());
+        Console.WriteLine("bool" + faker.Create<bool>());
+        Console.WriteLine("char" + faker.Create<char>());
+        Console.WriteLine("string" + faker.Create<string>());
+        Console.WriteLine("double" + faker.Create<double>());
+        Console.WriteLine("long" + faker.Create<long>());
     }
 }
