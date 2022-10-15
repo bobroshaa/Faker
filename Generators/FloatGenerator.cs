@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class FloatGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return (float)(rnd.NextDouble() * (float.MaxValue - float.MinValue) + float.MinValue);
+        return (float)(context.Random.NextDouble() * (float.MaxValue - float.MinValue) + float.MinValue);
     }
 
     public bool CanGenerate(Type type)

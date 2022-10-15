@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class UIntGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return (uint)(rnd.NextDouble() * uint.MaxValue);
+        return (uint)(context.Random.NextDouble() * uint.MaxValue);
     }
 
     public bool CanGenerate(Type type)

@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Core", "Faker.Core\Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generators", "Generators\Generators.csproj", "{0D85F859-88E4-4328-A7B7-7A7136BE1491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{E08B2A3E-500A-47F1-ADEB-7B9CA549A172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{3399E11D-CC28-4EE9-851B-1AC2242A34BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{0D85F859-88E4-4328-A7B7-7A7136BE1491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D85F859-88E4-4328-A7B7-7A7136BE1491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D85F859-88E4-4328-A7B7-7A7136BE1491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08B2A3E-500A-47F1-ADEB-7B9CA549A172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08B2A3E-500A-47F1-ADEB-7B9CA549A172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08B2A3E-500A-47F1-ADEB-7B9CA549A172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08B2A3E-500A-47F1-ADEB-7B9CA549A172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3399E11D-CC28-4EE9-851B-1AC2242A34BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3399E11D-CC28-4EE9-851B-1AC2242A34BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3399E11D-CC28-4EE9-851B-1AC2242A34BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3399E11D-CC28-4EE9-851B-1AC2242A34BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

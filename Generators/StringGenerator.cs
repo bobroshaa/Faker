@@ -1,16 +1,17 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class StringGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        var rnd = new Random();
         var generator = new CharGenerator();
         var res = "";
-        int length  = rnd.Next(255);
+        int length  = context.Random.Next(255);
         for (int i = 0; i < length; ++i)
         {
-            res += generator.Generate(Type.GetType("System.Boolean"));
+            res += generator.Generate(Type.GetType("System.Boolean"), context);
         }
         return res;
     }

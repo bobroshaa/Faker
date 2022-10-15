@@ -9,8 +9,25 @@
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/BoolGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/BoolGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/ByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ByteGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/CharGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/CharGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/FloatGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/FloatGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/Generators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/Generators.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/IntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/IntGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/LongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/LongGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/SByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/SByteGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/ShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ShortGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/StringGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/StringGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/UIntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UIntGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/ULongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ULongGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators/UShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UShortGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +38,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0b5567882521e02aa3d40a7bce81b7235ccac4db588866e3498e614c3bc/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16ff322917a0b83377f6ae31f36a3dc542555a7cbb850d5823f16e5a1fb4fa6/Type.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/461854bb9cccb21ef12e869326317a584c5cf9e71b5f2d1d8527bf83b6328/Associates.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/526f4c71f27cebac534f1e6dc8d7b66f69221d7256f3a29390a047cc7b42d643/RuntimeConstructorInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/56c668108a7075cb495c4944c018aaa9dd1e2dc736bbf72324c2c8f39ba7162/InvalidCastException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9ff6e15065aca4366778dbe1a1b71b9164dea3534b71e1795c33fd6f159f52/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b34cda9bf13421d0d691446062e86e73ba22b7a724d9d34a2425bb1cc627e1/SR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c09c2ce5107b877e7d30d6b1ce5e4c36cdd52749b6bedce0ba4056c294869653/Type.Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde0291933299f1e732d9436b8558e21577bcdf64c6d8ac7c6a0abeac6c6d/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d77c4680ed9457393ace56767da2743b443a47727beda6a2b5304cc4abee506e/Activator.RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
@@ -33,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Generators/CharGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/DoubleGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/FloatGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Generators/Generator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/LongGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/ShortGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/StringGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,7 +115,8 @@
       <workItem from="1665670347270" duration="5508000" />
       <workItem from="1665737128594" duration="13256000" />
       <workItem from="1665841095601" duration="3363000" />
-      <workItem from="1665849145673" duration="2018000" />
+      <workItem from="1665849145673" duration="2735000" />
+      <workItem from="1665859514072" duration="3941000" />
     </task>
     <servers />
   </component>
@@ -121,17 +143,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Faker.Core/Faker.cs</url>
-          <line>78</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Faker.cs" initialLine="78" containingFunctionPresentation="method 'GetProperties'">
+          <url>file://$PROJECT_DIR$/Faker.Core/Program.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="16" containingFunctionPresentation="method 'Main'">
             <startOffsets>
-              <option value="2304" />
+              <option value="650" />
             </startOffsets>
             <endOffsets>
-              <option value="2363" />
+              <option value="707" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Generators/ListGenerator.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\ListGenerator.cs" initialLine="9" containingFunctionPresentation="method 'Generate'">
+            <startOffsets>
+              <option value="180" />
+            </startOffsets>
+            <endOffsets>
+              <option value="218" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

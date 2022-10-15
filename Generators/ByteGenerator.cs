@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class ByteGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return rnd.Next(0, 255);
+        return context.Random.Next(0, 255);
     }
 
     public bool CanGenerate(Type type)

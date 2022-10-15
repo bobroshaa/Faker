@@ -1,12 +1,15 @@
-﻿using System.Reflection.Emit;
-
-namespace Faker.Core;
-using Generators;
+﻿using Generators;
 using System.Reflection;
 using System.Linq;
-public class Faker
+using Interfaces;
+using Configuration;
+
+namespace Faker.Core;
+
+public class Faker : IFaker
 {
     private List<IValueGenerator> _generators;
+    private GeneratorContext _generatorContext;
     
     // Get all generators
     public Faker()
@@ -14,6 +17,7 @@ public class Faker
         _generators = Assembly.Load("Generators").GetTypes()
             .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
             .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
+        _generatorContext = new GeneratorContext(new Random(), this);
     }
     
     public T Create<T>()
@@ -29,7 +33,7 @@ public class Faker
         {
             if (generator.CanGenerate(t))
             {
-                instance = generator.Generate(t);
+                instance = generator.Generate(t, _generatorContext);
             }
         }
         // Try to get constructors of class

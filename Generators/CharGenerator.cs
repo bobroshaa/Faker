@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class CharGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return Convert.ToChar(rnd.Next(48, 122));
+        return Convert.ToChar(context.Random.Next(48, 122));
     }
 
     public bool CanGenerate(Type type)

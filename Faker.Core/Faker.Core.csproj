@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Generators\Generators.csproj" />
+      <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
     </ItemGroup>
 
 </Project>

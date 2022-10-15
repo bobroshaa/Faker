@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class ULongGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return (ulong)(rnd.NextDouble() * ulong.MaxValue);
+        return (ulong)(context.Random.NextDouble() * ulong.MaxValue);
     }
 
     public bool CanGenerate(Type type)

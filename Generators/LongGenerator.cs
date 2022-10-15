@@ -1,11 +1,12 @@
-﻿namespace Generators;
+﻿using Configuration;
+
+namespace Generators;
 
 public class LongGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate)
+    public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        Random rnd = new Random();
-        return (long)(rnd.NextDouble() * long.MaxValue);
+        return (long)(context.Random.NextDouble() * long.MaxValue);
     }
 
     public bool CanGenerate(Type type)
