@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/Generator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +20,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0b5567882521e02aa3d40a7bce81b7235ccac4db588866e3498e614c3bc/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16ff322917a0b83377f6ae31f36a3dc542555a7cbb850d5823f16e5a1fb4fa6/Type.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/461854bb9cccb21ef12e869326317a584c5cf9e71b5f2d1d8527bf83b6328/Associates.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/56c668108a7075cb495c4944c018aaa9dd1e2dc736bbf72324c2c8f39ba7162/InvalidCastException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b34cda9bf13421d0d691446062e86e73ba22b7a724d9d34a2425bb1cc627e1/SR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde0291933299f1e732d9436b8558e21577bcdf64c6d8ac7c6a0abeac6c6d/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d77c4680ed9457393ace56767da2743b443a47727beda6a2b5304cc4abee506e/Activator.RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f2103c576aef635626cde2a8c1caee4f5b23ca724d7d5f17e13aeb1e04cad/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Faker.Core/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/BoolGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -91,7 +92,9 @@
       <option name="presentableId" value="Default" />
       <updated>1665670336962</updated>
       <workItem from="1665670347270" duration="5508000" />
-      <workItem from="1665737128594" duration="12617000" />
+      <workItem from="1665737128594" duration="13256000" />
+      <workItem from="1665841095601" duration="3363000" />
+      <workItem from="1665849145673" duration="2018000" />
     </task>
     <servers />
   </component>
@@ -118,17 +121,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Generators/DoubleGenerator.cs</url>
-          <line>7</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\DoubleGenerator.cs" initialLine="8" containingFunctionPresentation="method 'Generate'">
+          <url>file://$PROJECT_DIR$/Faker.Core/Faker.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Faker.cs" initialLine="78" containingFunctionPresentation="method 'GetProperties'">
             <startOffsets>
-              <option value="169" />
+              <option value="2304" />
             </startOffsets>
             <endOffsets>
-              <option value="219" />
+              <option value="2363" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
