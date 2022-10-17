@@ -9,25 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.Core/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/BoolGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/BoolGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ByteGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/CharGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/CharGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/FloatGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/FloatGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/Generators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/Generators.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/IntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/IntGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/LongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/LongGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/SByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/SByteGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ShortGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/StringGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/StringGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/UIntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UIntGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ULongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ULongGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/UShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UShortGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +98,8 @@
       <workItem from="1665737128594" duration="13256000" />
       <workItem from="1665841095601" duration="3363000" />
       <workItem from="1665849145673" duration="2735000" />
-      <workItem from="1665859514072" duration="3941000" />
+      <workItem from="1665859514072" duration="4797000" />
+      <workItem from="1665995149907" duration="750000" />
     </task>
     <servers />
   </component>
@@ -143,27 +126,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Faker.Core/Program.cs</url>
-          <line>16</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="16" containingFunctionPresentation="method 'Main'">
-            <startOffsets>
-              <option value="650" />
-            </startOffsets>
-            <endOffsets>
-              <option value="707" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Generators/ListGenerator.cs</url>
-          <line>8</line>
+          <line>9</line>
           <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\ListGenerator.cs" initialLine="9" containingFunctionPresentation="method 'Generate'">
             <startOffsets>
-              <option value="180" />
+              <option value="206" />
             </startOffsets>
             <endOffsets>
-              <option value="218" />
+              <option value="244" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

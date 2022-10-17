@@ -1,6 +1,5 @@
 ﻿using Generators;
 using System.Reflection;
-using System.Linq;
 using Interfaces;
 using Configuration;
 
@@ -10,7 +9,8 @@ public class Faker : IFaker
 {
     private List<IValueGenerator> _generators;
     private GeneratorContext _generatorContext;
-    
+    private static List<Type> _types = new List<Type>();
+
     // Get all generators
     public Faker()
     {
@@ -24,26 +24,33 @@ public class Faker : IFaker
     {
         return (T) Create(typeof(T));
     }
-    
+
     public object Create(Type t)
     {
-        object instance = null;
         // Check if this variable of primitive type
         foreach (var generator in _generators)
         {
             if (generator.CanGenerate(t))
             {
-                instance = generator.Generate(t, _generatorContext);
+                return generator.Generate(t, _generatorContext);
             }
         }
-        // Try to get constructors of class
-        if (instance == null)
-        {
-            object[] args = GetBestConstructor(t).GetParameters().Select(x => Create(x.ParameterType)).ToArray();
-            instance = Activator.CreateInstance(t, args);
-            GetFields(t, instance);
-            GetProperties(t, instance);
-        }
+
+        // Check for looping
+        if (_types.Contains(t)) 
+            return GetDefaultValue(t);
+        _types.Add(t);
+        
+        // Get constructors of class
+        object[] args = GetBestConstructor(t).GetParameters().Select(x => Create(x.ParameterType)).ToArray();
+        object instance = Activator.CreateInstance(t, args);
+        
+        // Filling null fields and properties
+        GetFields(t, instance);
+        GetProperties(t, instance);
+        _types.Remove(t);
+        
+        // If previous code can't fill this variable default value is assigned 
         if (instance == null)
             instance = GetDefaultValue(t);
         return instance;
