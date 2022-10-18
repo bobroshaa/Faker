@@ -1,12 +1,13 @@
 ﻿using Configuration;
+using Interfaces;
 
 namespace Generators;
 
 public class SByteGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate, GeneratorContext context)
+    public object Generate(Type typeToGenerate, IGeneratorContext context)
     {
-        return context.Random.Next(-128, 127);
+        return (sbyte)context.Random.Next(-128, 127);
     }
 
     public bool CanGenerate(Type type)

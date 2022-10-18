@@ -10,6 +10,7 @@ public class Faker : IFaker
     private List<IValueGenerator> _generators;
     private GeneratorContext _generatorContext;
     private static List<Type> _types = new List<Type>();
+    private FakerConfig _config;
 
     // Get all generators
     public Faker()
@@ -18,6 +19,11 @@ public class Faker : IFaker
             .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
             .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
         _generatorContext = new GeneratorContext(new Random(), this);
+    }
+
+    public Faker(FakerConfig config) : this()
+    {
+        _config = config;
     }
     
     public T Create<T>()
@@ -91,7 +97,7 @@ public class Faker : IFaker
             }
         }
     }
-    private static object GetDefaultValue(Type t)
+    public static object GetDefaultValue(Type t)
     {
         if (t.IsValueType)
             return Activator.CreateInstance(t);

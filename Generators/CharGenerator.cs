@@ -1,10 +1,11 @@
 ﻿using Configuration;
+using Interfaces;
 
 namespace Generators;
 
 public class CharGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate, GeneratorContext context)
+    public object Generate(Type typeToGenerate, IGeneratorContext context)
     {
         return Convert.ToChar(context.Random.Next(48, 122));
     }

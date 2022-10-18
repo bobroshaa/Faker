@@ -1,10 +1,11 @@
 ﻿using Configuration;
+using Interfaces;
 
 namespace Generators;
 
 public class UIntGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate, GeneratorContext context)
+    public object Generate(Type typeToGenerate, IGeneratorContext context)
     {
         return (uint)(context.Random.NextDouble() * uint.MaxValue);
     }

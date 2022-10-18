@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using Configuration;
+using Interfaces;
 
 namespace Generators;
 
 public class ListGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate, GeneratorContext context)
+    public object Generate(Type typeToGenerate, IGeneratorContext context)
     {
         var size = context.Random.Next(1, 11);
         var type = typeToGenerate.GetGenericArguments()[0];

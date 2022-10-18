@@ -1,12 +1,13 @@
 ﻿using Configuration;
+using Interfaces;
 
 namespace Generators;
 
 public class ShortGenerator : IValueGenerator
 {
-    public object Generate(Type typeToGenerate, GeneratorContext context)
+    public object Generate(Type typeToGenerate, IGeneratorContext context)
     {
-        return context.Random.Next(-32768, 32767);
+        return (short)context.Random.Next(-32768, 32767);
     }
 
     public bool CanGenerate(Type type)
