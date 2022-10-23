@@ -48,7 +48,7 @@ public class Faker : IFaker
         _types.Add(t);
         
         // Get constructors of class
-        object[] args = GetBestConstructor(t).GetParameters().Select(x => Create(x.ParameterType)).ToArray();
+        object[] args = GetBestConstructor(t).GetParameters().Select(x => GenerateValue(x.ParameterType, t, x.Name)).ToArray();
         object instance = Activator.CreateInstance(t, args);
         
         // Filling null fields and properties
@@ -81,7 +81,7 @@ public class Faker : IFaker
         {
             if (field.GetValue(instance) == null)
             {
-                field.SetValue(instance, Create(field.FieldType));
+                field.SetValue(instance, GenerateValue(field.FieldType, type, field.Name));
             }
         }
     }
@@ -93,7 +93,7 @@ public class Faker : IFaker
         {
             if (property.GetValue(instance) == null || property.GetValue(instance).Equals(0))
             {
-                property.SetValue(instance, Create(property.PropertyType));
+                property.SetValue(instance, GenerateValue(property.PropertyType, type, property.Name));
             }
         }
     }
@@ -103,5 +103,15 @@ public class Faker : IFaker
             return Activator.CreateInstance(t);
         else
             return null;
+    }
+
+    public object GenerateValue(Type memberType, Type objType, string memberName)
+    {
+        if (_config != null && _config.CanGenerate(objType, memberName))
+        {
+            return _config.GetGenerator(objType, memberName).Generate(objType, _generatorContext);
+        }
+
+        return Create(memberType);
     }
 }

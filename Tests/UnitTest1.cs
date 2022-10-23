@@ -1,3 +1,7 @@
+using System.Security.Authentication;
+using Configuration;
+using Interfaces;
+
 namespace Tests;
 
 public class Tests
@@ -72,6 +76,34 @@ public class Tests
         Faker.Core.Faker faker = new Faker.Core.Faker();
         Assert.That(faker.Create<User>().Age, Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(int))));
         Assert.That(faker.Create<User>().Name, Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(string))));
+    }
+
+    class Foo
+    {
+    public string City { get; set; }
+    }
+    
+    public class CityGenerator : IValueGenerator
+    {
+        public object Generate(Type typeToGenerate, IGeneratorContext context)
+        {
+            return "Mozyr";
+        }
+
+        public bool CanGenerate(Type type)
+        {
+            return type == Type.GetType("System.String");
+        }
+    }
+    
+    [Test]
+    public void FakerConfigTest()
+    {
+        var config = new FakerConfig();
+        config.Add<Foo, string, CityGenerator>(foo => foo.City); 
+        var faker = new Faker.Core.Faker(config);
+        Foo foo = faker.Create<Foo>();
+        Assert.That(foo.City, Is.EqualTo("Mozyr"));
     }
     
 }

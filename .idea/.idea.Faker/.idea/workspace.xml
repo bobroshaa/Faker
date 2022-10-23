@@ -9,25 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/GeneratorContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/GeneratorContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/FakerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/FakerConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.Core/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/BoolGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/BoolGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ByteGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/CharGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/CharGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/DoubleGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/FloatGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/FloatGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/Generator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/IntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/IntGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ListGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ListGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/LongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/LongGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/SByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/SByteGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ShortGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/StringGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/StringGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/UIntGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UIntGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ULongGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/ULongGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/UShortGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/UShortGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTest1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +21,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0b5567882521e02aa3d40a7bce81b7235ccac4db588866e3498e614c3bc/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/10d6fa5bb525569bac76d6f21c6eac467465e1ec10a39a4c6ee7b138735b13/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16ff322917a0b83377f6ae31f36a3dc542555a7cbb850d5823f16e5a1fb4fa6/Type.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/461854bb9cccb21ef12e869326317a584c5cf9e71b5f2d1d8527bf83b6328/Associates.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46a322d26154b982566e1817203e5452c91223f93b0e392d9c5b4806696fdc1/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/526f4c71f27cebac534f1e6dc8d7b66f69221d7256f3a29390a047cc7b42d643/RuntimeConstructorInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -48,6 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde0291933299f1e732d9436b8558e21577bcdf64c6d8ac7c6a0abeac6c6d/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d77c4680ed9457393ace56767da2743b443a47727beda6a2b5304cc4abee506e/Activator.RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f2103c576aef635626cde2a8c1caee4f5b23ca724d7d5f17e13aeb1e04cad/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f32dbb6125c4ccb0a4a4d75751846e451658f838bfed7ff4f88157f4fa7f0/MethodBase.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Faker.Core/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/BoolGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/ByteGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -119,7 +107,9 @@
       <workItem from="1665859514072" duration="4797000" />
       <workItem from="1665995149907" duration="2194000" />
       <workItem from="1666013829479" duration="1358000" />
-      <workItem from="1666079986206" duration="6083000" />
+      <workItem from="1666079986206" duration="9192000" />
+      <workItem from="1666351609300" duration="3121000" />
+      <workItem from="1666551520885" duration="1473000" />
     </task>
     <servers />
   </component>
@@ -159,17 +149,17 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Generators/StringGenerator.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\StringGenerator.cs" initialLine="11" containingFunctionPresentation="method 'Generate'">
+          <url>file://$PROJECT_DIR$/Faker.Core/Faker.cs</url>
+          <line>50</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Faker.cs" initialLine="50" containingFunctionPresentation="lambda expression inside method 'Create'">
             <startOffsets>
-              <option value="268" />
+              <option value="1372" />
             </startOffsets>
             <endOffsets>
-              <option value="307" />
+              <option value="1391" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
