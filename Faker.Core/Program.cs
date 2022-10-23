@@ -17,7 +17,7 @@ class Program
         User user = faker.Create<User>();
         Console.WriteLine("user" + " " + user.Age + " " + user.Name);
         Console.WriteLine(faker.Create<List<bool>>()[0]);
-        
+        Console.WriteLine(faker.Create<DateTime>());
     }
 }
 

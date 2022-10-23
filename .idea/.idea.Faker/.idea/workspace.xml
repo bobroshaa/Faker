@@ -9,10 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/FakerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/FakerConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker.Core/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <workItem from="1666013829479" duration="1358000" />
       <workItem from="1666079986206" duration="9192000" />
       <workItem from="1666351609300" duration="3121000" />
-      <workItem from="1666551520885" duration="1473000" />
+      <workItem from="1666551520885" duration="3843000" />
     </task>
     <servers />
   </component>
@@ -136,30 +133,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Generators/ListGenerator.cs</url>
-          <line>10</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\ListGenerator.cs" initialLine="9" containingFunctionPresentation="method 'Generate'">
+          <url>file://$PROJECT_DIR$/Faker.Core/Program.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="19" containingFunctionPresentation="method 'Main'">
             <startOffsets>
-              <option value="225" />
+              <option value="730" />
             </startOffsets>
             <endOffsets>
-              <option value="263" />
+              <option value="774" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Faker.Core/Faker.cs</url>
-          <line>50</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Faker.cs" initialLine="50" containingFunctionPresentation="lambda expression inside method 'Create'">
+          <url>file://$PROJECT_DIR$/Generators/DateTimeGenerator.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\DateTimeGenerator.cs" initialLine="8" containingFunctionPresentation="method 'Generate'">
             <startOffsets>
-              <option value="1372" />
+              <option value="182" />
             </startOffsets>
             <endOffsets>
-              <option value="1391" />
+              <option value="372" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
