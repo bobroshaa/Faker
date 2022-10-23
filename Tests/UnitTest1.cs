@@ -6,18 +6,12 @@ namespace Tests;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-        
-    }
-
     [Test]
     public void GeneratorTests()
     {
         Faker.Core.Faker faker = new Faker.Core.Faker();
         Assert.That(faker.Create<byte>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(byte))));
-        Assert.That(faker.Create<bool>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(bool))));
+        Assert.That(faker.Create<bool>(), Is.AnyOf(true, false));
         
         Assert.That(faker.Create<short>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(short))));
         Assert.That(faker.Create<ushort>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(ushort))));
@@ -35,6 +29,8 @@ public class Tests
         Assert.That(faker.Create<string>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(string))));
         
         Assert.That(faker.Create<List<int>>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(List<int>))));
+        
+        Assert.That(faker.Create<DateTime>(), Is.Not.EqualTo(Faker.Core.Faker.GetDefaultValue(typeof(DateTime))));
     }
     
     class A
