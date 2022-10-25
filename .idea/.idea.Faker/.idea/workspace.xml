@@ -8,7 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Faker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTest1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d77c4680ed9457393ace56767da2743b443a47727beda6a2b5304cc4abee506e/Activator.RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f2103c576aef635626cde2a8c1caee4f5b23ca724d7d5f17e13aeb1e04cad/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f32dbb6125c4ccb0a4a4d75751846e451658f838bfed7ff4f88157f4fa7f0/MethodBase.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Faker.Core/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fd7e84c652acb74d1bb469c0db41fde874bfe844286f14882816f367e4e8e1/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Faker.Core/Faker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/BoolGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/ByteGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/CharGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Generators/StringGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/ULongGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generators/UShortGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dddd/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +81,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/dddd/dddd.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -106,7 +109,8 @@
       <workItem from="1666013829479" duration="1358000" />
       <workItem from="1666079986206" duration="9192000" />
       <workItem from="1666351609300" duration="3121000" />
-      <workItem from="1666551520885" duration="4308000" />
+      <workItem from="1666551520885" duration="4858000" />
+      <workItem from="1666623029652" duration="1165000" />
     </task>
     <servers />
   </component>
@@ -133,32 +137,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Faker.Core/Program.cs</url>
+          <url>file://$PROJECT_DIR$/dddd/Program.cs</url>
           <line>19</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="19" containingFunctionPresentation="method 'Main'">
-            <startOffsets>
-              <option value="730" />
-            </startOffsets>
-            <endOffsets>
-              <option value="773" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="19" containingFunctionPresentation="method 'Main'" />
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Generators/DateTimeGenerator.cs</url>
-          <line>8</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Generators\DateTimeGenerator.cs" initialLine="8" containingFunctionPresentation="method 'Generate'">
-            <startOffsets>
-              <option value="182" />
-            </startOffsets>
-            <endOffsets>
-              <option value="372" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#Faker.Core.Faker.GetBestConstructor" memberName="constructors" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

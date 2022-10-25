@@ -76,7 +76,7 @@ public class Faker : IFaker
 
     public void GetFields(Type type, object instance)
     {
-        FieldInfo[] fields = type.GetFields();
+        FieldInfo[] fields = type.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
         foreach (var field in fields)
         {
             if (field.GetValue(instance) == null)
@@ -88,7 +88,7 @@ public class Faker : IFaker
     
     public void GetProperties(Type type, object instance)
     {
-        PropertyInfo[] properties = type.GetProperties();
+        PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
         foreach (var property in properties)
         {
             if (property.GetValue(instance) == null || property.GetValue(instance).Equals(0))
