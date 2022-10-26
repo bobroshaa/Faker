@@ -1,5 +1,4 @@
-﻿using Generators;
-using System.Reflection;
+﻿using System.Reflection;
 using Interfaces;
 using Configuration;
 
@@ -18,6 +17,18 @@ public class Faker : IFaker
         _generators = Assembly.Load("Generators").GetTypes()
             .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
             .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
+        string[] allfiles = Directory.GetFiles("Plugins");
+        foreach (string filename in allfiles)
+        {
+            var list = Assembly.LoadFrom(filename).GetTypes()
+                .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
+                .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
+            foreach (var generator in list)
+            {
+                _generators.Add(generator);
+            }
+        }
+
         _generatorContext = new GeneratorContext(new Random(), this);
     }
 

@@ -1,6 +1,6 @@
 ﻿using Interfaces;
 
-namespace Generators;
+namespace ByteGenerator;
 
 public class ByteGenerator : IValueGenerator
 {

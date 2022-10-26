@@ -1,6 +1,6 @@
 ﻿using Interfaces;
 
-namespace Generators;
+namespace BoolGenerator;
 
 public class BoolGenerator : IValueGenerator
 {
