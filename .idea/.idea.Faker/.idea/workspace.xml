@@ -8,15 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69430cbd-2918-44c2-851e-33edd150c1f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Faker.Core/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.Core/Faker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Faker.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/BoolGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoolGenerator/BoolGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/ByteGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ByteGenerator/ByteGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators/DateTimeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Generators/DateTimeGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +116,7 @@
       <workItem from="1666623029652" duration="1165000" />
       <workItem from="1666770986653" duration="2368000" />
       <workItem from="1666773426314" duration="2952000" />
+      <workItem from="1667307468068" duration="2036000" />
     </task>
     <servers />
   </component>
@@ -153,19 +147,6 @@
           <line>19</line>
           <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Program.cs" initialLine="19" containingFunctionPresentation="method 'Main'" />
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Faker.Core/Faker.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\bobro\RiderProjects\Faker\Faker.Core\Faker.cs" initialLine="22" containingFunctionPresentation="constructor 'Faker'">
-            <startOffsets>
-              <option value="1052" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1113" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

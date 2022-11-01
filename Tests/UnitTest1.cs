@@ -75,10 +75,10 @@ public class Tests
 
     class Foo
     {
-    public string City { get; set; }
+        public string City { get; set; }
+        public int Population { get; set; }
     }
-    
-    public class CityGenerator : IValueGenerator
+    class CityGenerator : IValueGenerator
     {
         public object Generate(Type typeToGenerate, IGeneratorContext context)
         {
@@ -90,16 +90,29 @@ public class Tests
             return type == Type.GetType("System.String");
         }
     }
+    class PopulationGenerator : IValueGenerator
+    {
+        public object Generate(Type typeToGenerate, IGeneratorContext context)
+        {
+            return context.Random.Next(90000, 100000);
+        }
+
+        public bool CanGenerate(Type type)
+        {
+            return type == Type.GetType("System.Int32");
+        }
+    }
     
     [Test]
     public void FakerConfigTest()
     {
         var config = new FakerConfig();
-        config.Add<Foo, string, CityGenerator>(foo => foo.City); 
+        config.Add<Foo, string, CityGenerator>(foo => foo.City);
+        config.Add<Foo, int, PopulationGenerator>(foo => foo.Population);
         var faker = new Faker.Core.Faker(config);
         Foo foo = faker.Create<Foo>();
         Assert.That(foo.City, Is.EqualTo("Mozyr"));
+        Assert.That(foo.Population, Is.GreaterThanOrEqualTo(90000));
+        Assert.That(foo.Population, Is.LessThan(100000));
     }
-    
-
 }

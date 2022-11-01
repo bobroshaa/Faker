@@ -10,15 +10,17 @@ public class Faker : IFaker
     private GeneratorContext _generatorContext;
     private static List<Type> _types = new List<Type>();
     private FakerConfig _config;
-
-    // Get all generators
+    
     public Faker()
     {
+        // Get all generators
         _generators = Assembly.Load("Generators").GetTypes()
             .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
             .Select(t => (IValueGenerator)Activator.CreateInstance(t)).ToList();
-        string[] allfiles = Directory.GetFiles("Plugins");
-        foreach (string filename in allfiles)
+        
+        // Get generators from plugins
+        string[] allFiles = Directory.GetFiles("Plugins");
+        foreach (string filename in allFiles)
         {
             var list = Assembly.LoadFrom(filename).GetTypes()
                 .Where(t => t.GetInterfaces().Contains(typeof(IValueGenerator)))
@@ -28,7 +30,6 @@ public class Faker : IFaker
                 _generators.Add(generator);
             }
         }
-
         _generatorContext = new GeneratorContext(new Random(), this);
     }
 
@@ -59,7 +60,8 @@ public class Faker : IFaker
         _types.Add(t);
         
         // Get constructors of class
-        object[] args = GetBestConstructor(t).GetParameters().Select(x => GenerateValue(x.ParameterType, t, x.Name)).ToArray();
+        object[] args = GetBestConstructor(t).GetParameters()
+            .Select(x => GenerateValue(x.ParameterType, t, x.Name)).ToArray();
         object instance = Activator.CreateInstance(t, args);
         
         // Filling null fields and properties
@@ -90,10 +92,7 @@ public class Faker : IFaker
         FieldInfo[] fields = type.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
         foreach (var field in fields)
         {
-            if (field.GetValue(instance) == null)
-            {
-                field.SetValue(instance, GenerateValue(field.FieldType, type, field.Name));
-            }
+            field.SetValue(instance, GenerateValue(field.FieldType, type, field.Name));
         }
     }
     
@@ -102,27 +101,21 @@ public class Faker : IFaker
         PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
         foreach (var property in properties)
         {
-            if (property.GetValue(instance) == null || property.GetValue(instance).Equals(0))
-            {
-                property.SetValue(instance, GenerateValue(property.PropertyType, type, property.Name));
-            }
+            property.SetValue(instance, GenerateValue(property.PropertyType, type, property.Name));
         }
     }
+    
     public static object GetDefaultValue(Type t)
     {
         if (t.IsValueType)
             return Activator.CreateInstance(t);
-        else
-            return null;
+        return null;
     }
 
     public object GenerateValue(Type memberType, Type objType, string memberName)
     {
         if (_config != null && _config.CanGenerate(objType, memberName))
-        {
             return _config.GetGenerator(objType, memberName).Generate(objType, _generatorContext);
-        }
-
         return Create(memberType);
     }
 }

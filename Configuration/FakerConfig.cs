@@ -6,12 +6,10 @@ namespace Configuration;
 public class FakerConfig
 {
     private Dictionary<Type, Dictionary<string, IValueGenerator>> _generators = new();
- 
-    //config.Add<Person, string, NameGenerator>(p => p.Name)
+    
     public void Add<TClass, TType, TGenerator>(Expression<Func<TClass, TType>> exprTree)
     where TGenerator : IValueGenerator
     {
-        Expression operation = exprTree.Body; 
         var name = ((MemberExpression)exprTree.Body).Member.Name;  
         var generator = (IValueGenerator)Activator.CreateInstance(typeof(TGenerator));
         if (_generators.ContainsKey(typeof(TClass)))
